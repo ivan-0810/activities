@@ -67,11 +67,13 @@ const ScheduleForm = ({ handleSubmit }) => {
     }
   };
 
-  const handleDateFIeld = val => {
+  const handleDateFIeld = e => {
     dispatch(is_schedule_datepicker_true());
+    e.target.blur();
   };
-  const handleTimeFIeld = () => {
+  const handleTimeFIeld = e => {
     dispatch(is_schedule_timepicker_true());
+    e.target.blur();
   };
 
   return (

@@ -4,7 +4,6 @@ import configureStore from './store';
 import Activities from './containers/activiteis';
 import Schedule from './containers/schedule/';
 import { BrowserRouter , Routes, Route} from 'react-router-dom';
-import SuccessMessage from "./components/toasts/SuccessMessage";
 import ErrorMessage from "./components/toasts/ErrorMessage";
 
 const store = configureStore();

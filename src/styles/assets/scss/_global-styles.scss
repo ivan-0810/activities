@@ -99,6 +99,9 @@ p {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     color: $sage;
+    &:focus{
+      box-shadow: none;
+    }
      &::placeholder{
        color: $sage;
       opacity: 0.6;

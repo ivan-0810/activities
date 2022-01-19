@@ -32,7 +32,7 @@ export const inputGroupField = ({
   const changeHandler = e => {
     input.onChange(e);
     if (typeof feedback === 'function') {
-      feedback(e.currentTarget.value);
+      feedback(e);
     }
   };
 
