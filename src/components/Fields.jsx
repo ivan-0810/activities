@@ -136,7 +136,7 @@ export const inputField = ({
           placeholder={placeholder}
           type={type}
           readOnly={readOnly}
-          inputmode="none"
+          showSoftInputOnFocus={false}
           />
         <div>{children}</div>
 

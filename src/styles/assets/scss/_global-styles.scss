@@ -140,7 +140,7 @@ p {
 
 .toast-message, .error-message {
   position: fixed;
-  bottom: 15%;
+  top: 5%;
   right: 0px;
   background-color: $white;
   z-index: 9999999;
