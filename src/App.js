@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Provider } from 'react-redux';
+import configureStore from './store';
+import Activities from './containers/activiteis';
+import Schedule from './containers/schedule/';
+import { BrowserRouter , Routes, Route} from 'react-router-dom';
+import SuccessMessage from "./components/toasts/SuccessMessage";
+import ErrorMessage from "./components/toasts/ErrorMessage";
 
+const store = configureStore();
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SuccessMessage />
+      <ErrorMessage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Activities/>} />
+          <Route path="/schedule" element={<Schedule/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
+    </Provider>
   );
 }
 

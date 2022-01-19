@@ -1,0 +1,168 @@
+body,
+html {
+  font-size: 16px;
+  font-family: 'Europa-Regular';
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Europa-Bold';
+}
+h4,
+h5,
+h6 {
+  font-family: 'Europa-Regular';
+};
+a {
+  text-decoration: none !important;
+}
+a,
+p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: $gray-100;
+}
+.btn:focus {
+ box-shadow: none!important;
+}
+.icon-wrapper{
+  position: relative;
+  i{ @include absolute-center(50%,50%,'',50%)}
+}
+.icon15{
+  width: 15px;
+  height: 15px;
+ 
+}
+.icon25{
+  width: 25px;
+  height: 25px;
+}
+.icon30{
+  width: 30px;
+  height: 30px;
+}
+.icon12{
+  width: 12px;
+  height: 12px;
+}
+
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+.icon-card{
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 30px;
+}
+.icon-35{
+  padding: 15px;
+    .icon{
+     width: 35px;
+     height: 35px;
+    }
+
+}
+
+
+
+
+.activity-card{
+  border-radius: 15px;
+  .img-wrapper{
+    width: 100%;
+    height: 107px;
+    object-fit: contain;
+    img{
+      @include img-100(100%, 100%)
+    }
+  }
+  .content-wrapper{
+    .icon{
+      position: absolute;
+    }
+  }
+}
+.col-form-label{
+  opacity:0.8
+}
+
+.input-group {
+  .form-control{
+    height: 56px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: $sage;
+     &::placeholder{
+       color: $sage;
+      opacity: 0.6;
+       padding-left: 10px;
+       font-family: "Europa-Light";
+     }
+  }
+  .input-group-append{
+    border-radius: 6px;
+    width: 15%;
+    background-color: $primary;
+    position: relative;
+    .icon{
+      @include absolute-center(50%, 50%,"", 50%)
+    }
+  }
+}
+
+.schedule{
+  height: 100vh;
+  .schedule-form-btn{
+    width: 291px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid $sage;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+}
+.schedule-date-timing{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  height: auto;
+  background-color: $gray-300;
+}
+
+.toast-message, .error-message {
+  position: fixed;
+  bottom: 15%;
+  right: 0px;
+  background-color: $white;
+  z-index: 9999999;
+}
+.invalid-feedback{
+  color:$white;
+}
+.picker-container {
+  padding: 0px;
+  .picker-highlight{
+    &::after, &::before{
+      background-color: $dark;
+    }
+  }
+}
+
+.no-scrolbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrolbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
