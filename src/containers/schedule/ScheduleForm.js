@@ -79,10 +79,9 @@ const ScheduleForm = ({ handleSubmit }) => {
   return (
     <Form
       noValidate
-      className="needs-validation"
+      className="needs-validation row justify-content-center"
       onSubmit={handleSubmit(submitForm)}
     >
-      <div className="row justify-content-center">
       <Field
         name="duration"
         className="col-12 form-control py-4"
@@ -121,17 +120,14 @@ const ScheduleForm = ({ handleSubmit }) => {
           onClick={() => dispatch(is_schedule_datepicker_true())}
         />
       </Field>
-      </div>
-     
-
-      
+      <div className="col-12 py-3 d-flex justify-content-center">
         <button
           className="btn schedule-form-btn rounded-pill bg-gray-500 ls-21 fs-14 text-white rs-medium text-uppercase"
           type="submit"
         >
           {schedule.schedule_form.button_txt}
         </button>
-
+      </div>
     </Form>
   );
 };
