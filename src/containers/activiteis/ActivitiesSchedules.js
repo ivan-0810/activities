@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { activites } from '../../constants/activities';
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import ActivityDay from './ActivitiyDay';
 import { isEmpty } from 'lodash';
 const ActivitesSchedules = () => {

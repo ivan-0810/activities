@@ -36,7 +36,6 @@ const ScheduleForm = ({ handleSubmit }) => {
       const sameDay = Object.keys(activities).includes(splited[2]);
       if (sameDay) {
         const oldArr = activities[splited[2]].dailyActivities;
-        console.log(oldArr, 'old');
         newActivities = {
           ...activities,
           [splited[2]]: {
@@ -69,7 +68,6 @@ const ScheduleForm = ({ handleSubmit }) => {
   };
 
   const handleDateFIeld = val => {
-    console.log(val);
     dispatch(is_schedule_datepicker_true());
   };
   const handleTimeFIeld = () => {

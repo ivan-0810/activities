@@ -1,5 +1,3 @@
-import { includes } from 'lodash';
-
 
 const labelOutput = ({ label, inline, input, touched, target, error }) => {
   if (label) {
