@@ -120,15 +120,12 @@ const ScheduleForm = ({ handleSubmit }) => {
           onClick={() => dispatch(is_schedule_datepicker_true())}
         />
       </Field>
-
-      <div className="col-12 d-grid mt-3">
         <button
           className="btn schedule-form-btn rounded-pill bg-gray-500 ls-21 fs-14 text-white rs-medium text-uppercase"
           type="submit"
         >
           {schedule.schedule_form.button_txt}
         </button>
-      </div>
     </Form>
   );
 };
