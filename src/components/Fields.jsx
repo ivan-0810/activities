@@ -109,6 +109,7 @@ export const inputField = ({
 }) => {
   const changeHandler = e => {
     input.onChange(e);
+    e.target.blur();
     if (typeof feedback === 'function') {
       feedback(e.currentTarget.value);
     }
@@ -136,7 +137,7 @@ export const inputField = ({
           placeholder={placeholder}
           type={type}
           readOnly={readOnly}
-          showSoftInputOnFocus={false}
+         
           />
         <div>{children}</div>
 
