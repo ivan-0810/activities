@@ -12,7 +12,6 @@ function App() {
   return (
     <Provider store={store}>
     <div className="App">
-      <SuccessMessage />
       <ErrorMessage />
       <BrowserRouter>
         <Routes>
