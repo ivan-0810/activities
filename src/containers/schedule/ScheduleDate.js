@@ -100,7 +100,7 @@ const ScheduleTiming = () => {
           optionGroups={pickerState.optionGroups}
           valueGroups={pickerState.valueGroups}
           onChange={handleChange}
-          itemHeight={36}
+          itemHeight={50}
         />
       </div>
     </motion.div>
