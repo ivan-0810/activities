@@ -5,13 +5,13 @@ const transition04 ={ duration: 0.4,ease: 'easeInOut'}
 
 export const bottomToTopVariants = {
   initial: { y: "100%",  },
-  enter: { y: "0",transition: transition02 },
-  exit: { y: '100%', transition: transition02 }
+  enter: { y: "0",transition: transition03 },
+  exit: { y: '100%', transition: transition03 }
 };
 export const topToBottomVariants = {
     initial: { y: "-100%",  },
-    enter: { y: "0",transition: transition02 },
-    exit: { y: '-100%', transition: transition02 }
+    enter: { y: "0",transition: transition03 },
+    exit: { y: '-100%', transition: transition03 }
   };
 
   export const enter_Y_exit_OP = {
