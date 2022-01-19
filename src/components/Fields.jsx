@@ -136,7 +136,6 @@ export const inputField = ({
           placeholder={placeholder}
           type={type}
           readOnly={readOnly}
-        
         />
         <div>{children}</div>
 
